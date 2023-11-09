@@ -13,6 +13,9 @@
         <maven.compiler.target>11</maven.compiler.target>
 
         <junit.version>5.8.2</junit.version>
+    </properties>
+
+    <properties>
 
         <jdk.version>1.8</jdk.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
