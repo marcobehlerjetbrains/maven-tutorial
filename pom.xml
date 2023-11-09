@@ -60,4 +60,20 @@
         </dependency>
     </dependencies>
 
+
+    <distributionManagement>
+            <repository>
+              <id>nexus</id>
+              <name>marcojetbrains-tutorial-release</name>
+              <url>http://18.233.161.12:8081/repository/marco-tutorial-demo-release/</url>
+            </repository>
+
+            <snapshotRepository>
+              <id>nexus</id>
+              <name>marcojetbrains-tutorial-snapshot</name>
+              <url>http://18.233.161.12:8081/repository/marco-tutorial-demo-snapshot/</url>
+            </snapshotRepository>
+
+    </distributionManagement>
+
 </project>
