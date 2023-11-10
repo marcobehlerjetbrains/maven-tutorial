@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jetbrains.marco</groupId>
-    <artifactId>maven-tutorial</artifactId>
+    <artifactId>maven-tutorial-felix-version-0.1.1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -13,6 +13,11 @@
         <maven.compiler.target>11</maven.compiler.target>
 
         <junit.version>5.8.2</junit.version>
+    
+		<sonar.host.url>http://3.87.204.94:9000/</sonar.host.url>
+		<sonar.login>cloudsec</sonar.login>  
+		<sonar.login>77a192eac8b98b14ea0d44f3ebbf72405c839f26</sonar.login>
+		
     </properties>
 
     <build>
@@ -54,5 +59,21 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+
+    <distributionManagement>
+            <repository>
+              <id>nexus</id>
+              <name>marcojetbrains-tutorial-release</name>
+              <url>http://18.233.161.12:8081/repository/marco-tutorial-demo-release/</url>
+            </repository>
+
+            <snapshotRepository>
+              <id>nexus</id>
+              <name>marcojetbrains-tutorial-snapshot</name>
+              <url>http://18.233.161.12:8081/repository/marco-tutorial-demo-snapshot/</url>
+            </snapshotRepository>
+
+    </distributionManagement>
 
 </project>
